@@ -11,7 +11,7 @@ cert_file="temp.pem"
 if os.path.exists(cert_file):
        os.remove(cert_file)
 cc = socket(AF_INET, SOCK_STREAM)
-cc.connect(("zeus.smhplus.org", 389))
+cc.connect(("<servername>", 389))
 # ANS1 STARTTLS OID 1.3.6.1.4.1.1466.20037
 # The correct way to do is is to build this structure in pyans1. This was copied from wireshark as a hex dump
 bytes1=bytearray.fromhex('30 1d 02 01 01 77 18 80 16 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e 31 34 36 36 2e 32 30 30 33 37')
