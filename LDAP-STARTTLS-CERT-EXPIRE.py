@@ -31,5 +31,5 @@ f.write(cert)
 f.close()
 #test_decode_cert is undocumented but is build a Dict of the certificate structure
 temp=ssl._ssl._test_decode_cert(cert_file)
-d=datetime.strptime(temp['notAfter'], '%b %d %H:%M:%S %Y %Z')
+d=datetime.strptime(temp['notAfter'], r'%b %d %H:%M:%S %Y %Z')
 print(d)  #prints the expire date on the certificate
