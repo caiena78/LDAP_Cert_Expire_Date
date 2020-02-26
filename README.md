@@ -1,2 +1,2 @@
 # LDAP_Cert_Expire_Date
-Check LDAP certificates to see if they are expired
+This is a simple python script to download the certificate from a LDAP server and print its expire date.
